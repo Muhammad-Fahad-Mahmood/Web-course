@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 10px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            width: 70vw;
+            height: 20vh;
+            border: 2px solid black;
+            background-color: rgb(35, 35, 35);
+            border-radius: 4px;
+            padding: 3px;
+        }
+
+        .image img {
+            width: 200px;
+            border-radius: 3px;
+        }
+
+        .image {
+            position: relative;
+        }
+
+        .duration_video {
+            position: absolute;
+            right: 3px;
+            bottom: 6px;
+            z-index: 10;
+            font-size: 14px;
+            background-color: rgb(34, 34, 34);
+            color: white;
+            border-radius: 3px;
+            padding: 2px 2px;
+        }
+
+        .content {
+            margin-left: 10px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 5px;
+        }
+
+        .title {
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: bolder;
+            color: white;
+        }
+
+        .details {
+            font-family: sans-serif;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

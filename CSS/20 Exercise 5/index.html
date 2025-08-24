@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --border: 2px solid rgb(79, 79, 79);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(255, 214, 160);
+        }
+
+        header {
+            position: sticky;
+            top: 0px;
+        }
+
+        .navbar {
+            height: 10vh;
+            width: 100vw;
+            background-color: blue;
+            border: var(--border);
+        }
+
+        .container {
+            height: 80vh;
+            width: 100vw;
+            background-color: aqua;
+            border: var(--border);
+        }
+
+        .box {
+            display: inline-block;
+            height: 60vh;
+            width: 40vw;
+            background-color: brown;
+            margin: 57px;
+            margin-top: 33px;
+            margin-bottom: 0px;
+            border: var(--border);
+        }
+
+        .container2 {
+            height: 35vh;
+            width: 80vw;
+            background-color: grey;
+            margin: auto;
+            border-radius: 30px;
+            text-align: center;
+            font-size: 50px;
+            border: var(--border);
+        }
+
+        .container2 p {
+            display: inline-block;
+            margin-top: 80px;
+        }
+
+        .circle {
+            height: 40px;
+            width: 40px;
+            background-color: black;
+            border-radius: 30px;
+            position: fixed;
+            bottom: 5px;
+            right: 5px;
+            border: var(--border);
+        }
+
+        .foot {
+            height: 10vh;
+            width: 100vw;
+            background-color: rgb(0, 255, 38);
+            border: var(--border);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar"></nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="container2">
+            <p>Hey welcome to my website</p>
+        </div>
+    </main>
+    <footer>
+        <div class="circle"></div>
+        <div class="foot"></div>
+    </footer>
+</body>
+
+</html>

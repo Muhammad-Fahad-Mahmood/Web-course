@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 10px;
+            margin: 10px;
+            background-color: aquamarine;
+        }
+
+        .child_container {
+            padding: 10px;
+            margin: 10px;
+            background-color: aqua;
+        }
+
+        .child {
+            padding: 10px;
+            margin: 10px;
+            background-color: pink;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="child_container">
+            <div class="child">
+                I am child
+            </div>
+        </div>
+    </div>
+    <script>
+        // whenever you clicked on child it automatically assumed by JS that you clicked on child_container and container also so "e.stopPropagation" will use to handle this.
+
+        // document.querySelector(".child").addEventListener("click", (e) => {
+        //     e.stopPropagation();                                                  // only child clicked and stop.
+        //     alert("Child was clicked");
+        // })
+        // document.querySelector(".child_container").addEventListener("click", (e) => {
+        //     alert("Child container was clicked");                          // child_container and container both clicked
+        // })
+        // document.querySelector(".container").addEventListener("click", (e) => {
+        //     alert("container was clicked");
+        // })
+
+        // function getRandomcolor() {
+        //     let val1 = Math.ceil(0 + Math.random() * 255);
+        //     let val2 = Math.ceil(0 + Math.random() * 255);
+        //     let val3 = Math.ceil(0 + Math.random() * 255);
+        //     return `rgb(${val1}, ${val2}, ${val3})`;
+        // }
+
+        // let a = setInterval(() => {
+        //     document.querySelector(".child").style.backgroundColor = getRandomcolor();
+        //     document.querySelector(".child_container").style.backgroundColor = getRandomcolor();    // it change color every 2 seconds...
+        //     document.querySelector(".container").style.backgroundColor = getRandomcolor();
+        // }, 2000);
+
+        // clearInterval(a);        // it stops setInterval whenever called
+
+        // let b = setTimeout(() => {
+        //     document.querySelector(".child").style.backgroundColor = getRandomcolor();
+        //     document.querySelector(".child_container").style.backgroundColor = getRandomcolor();    // it only runs once....
+        //     document.querySelector(".container").style.backgroundColor = getRandomcolor();
+        // }, 2000);
+
+        // clearTimeout(b);        // it stops setTimeout whenever called
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(0, 74, 0);
+            color: white;
+        }
+
+        .sub_container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .container {
+            margin: auto;
+            margin-top: 50px;
+            padding: 10px;
+            width: 50vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+        }
+
+        .sub_container div {
+            padding: 10px;
+            font-size: 20px;
+            margin: 5px 0;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+
+        .message {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .message span {
+            font-size: 20px;
+            color: rgb(228, 57, 57);
+            border: 1px solid rgb(228, 57, 57);
+            border-radius: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sub_container">
+
+        </div>
+        <div class="message">
+
+        </div>
+    </div>
+    <script>
+        let arr = ["Initialized hacking",
+            "Reading your filed",
+            "Password files detected",
+            "Sending all files to server",
+            "Cleaning up"];
+
+        const randDelay = async () => {
+            return new Promise((resolve, reject) => {
+                let time = 1 + 2 * Math.random();
+                setTimeout(() => {
+                    resolve();
+                }, time * 1000);
+            })
+        }
+
+        const addItem = async (item) => {
+            await randDelay();
+            let div = document.createElement("div");
+            div.innerHTML = item;
+            document.querySelector(".sub_container").append(div);
+        }
+
+        async function main() {
+            let a = setInterval(() => {
+                let temp = document.querySelector(".sub_container").lastElementChild;
+                if (temp.innerHTML.endsWith("...")) {
+                    temp.innerHTML = temp.innerHTML.slice(0, temp.innerHTML.length - 3);
+                } else {
+                    temp.innerHTML += ".";
+                }
+            }, 500);
+            for (const item of arr) {
+                await addItem(item);
+            }
+
+            await randDelay();
+            clearInterval(a);
+
+            let done = document.createElement("span");
+            done.innerHTML = "All done you are under attack";
+            document.querySelector(".message").append(done);
+        }
+        main();
+    </script>
+</body>
+
+</html>

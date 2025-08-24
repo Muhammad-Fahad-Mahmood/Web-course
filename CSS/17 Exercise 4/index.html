@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+    <style>
+        @media only screen and (max-width: 500px) {
+            body{
+                background-color: brown;
+            }
+        }
+
+        :root {
+            --color: grey;
+            --padding: 7px;
+            --divcolor: black;
+        }
+
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            padding: var(--padding);
+            background-color: var(--divcolor);
+        }
+
+        .nav nav {
+            background-color: var(--color);
+            padding: var(--padding);
+        }
+
+        .nav nav ul li {
+            display: inline-block;
+            padding: var(--padding);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact us</li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>

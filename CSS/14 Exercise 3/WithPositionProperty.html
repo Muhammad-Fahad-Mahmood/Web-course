@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Using CSS Position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: grey;
+        }
+
+        .card {
+            background-color: aliceblue;
+            height: 200px;
+            width: 150px;
+            position: relative;
+            top: 50px;
+            left: 200px;
+            border-radius: 7px;
+        }
+
+        .image {
+            position: relative;
+            top: 4.5px;
+            left: 4.5px;
+        }
+
+        .image img {
+            border-radius: 7px;
+            /* position: relative;
+            top: 5px; */
+        }
+
+        .capsules span {
+            position: relative;
+            border: 1px solid grey;
+            top: 5px;
+            left: 4.5px;
+            border-radius: 9px;
+            display: inline-block;
+            width: 40px;
+            text-align: center;
+            padding: 0px 3px;
+            font-size: 13px;
+        }
+
+        .container {
+            position: relative;
+            left: 4.5px;
+            top: 9px;
+        }
+
+        .container h2 {
+            font-size: 20px;
+        }
+
+        .container p {
+            position: relative;
+            top: 3px;
+            font-size: 13px;
+            color: rgb(71, 71, 71);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="image">
+            <img src="images.jfif" alt="" height="100px" width="140px">
+        </div>
+        <div class="capsules">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+        <div class="container">
+            <h2>What is Life?</h2>
+            <p>Life is Fight against nature and we observe it daily.</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nodes, parent, child</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            height: 30px;
+            width: 30px;
+            background-color: aquamarine;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">box 1</div>
+        <div class="box">box 2</div>
+        <div class="box">box 3</div>
+        <div class="box">box 4</div>
+        <div class="box">box 5</div>
+    </div>
+
+    <script>
+        // console.log(document.body.childNodes);
+        // document.body.childNodes[1];
+        // document.body.childNodes[1].childNodes;
+        // document.body.childNodes[1].childNodes[3];
+
+        // let cont = document.body.childNodes[1];
+        // console.log(cont.firstChild);
+        // console.log(cont.lastChild);
+
+
+
+        // If we want access directly elements child not text childs
+
+        // console.log(document.body.firstElementChild);
+        // console.log(document.body.lastElementChild);
+
+        // console.log(document.body.firstElementChild.lastElementChild);
+        // document.body.firstElementChild.lastElementChild.style.color = "red";
+        // document.body.firstElementChild.lastElementChild.style.backgroundColor = "yellow";
+
+        // console.log(document.body.firstElementChild.children);  // returns all elements childs...
+        // console.log(document.body.firstElementChild.children[2]);
+        // console.log(document.body.firstElementChild.children[2].nextElementSibling);
+        // console.log(document.body.firstElementChild.children[2].previousElementSibling);
+        // console.log(document.body.firstElementChild.children[2].nextSibling);
+        // console.log(document.body.firstElementChild.children[2].previousSibling);
+
+
+
+        
+    </script>
+</body>
+
+</html>

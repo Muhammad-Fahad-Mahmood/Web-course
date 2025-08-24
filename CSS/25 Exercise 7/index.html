@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI';
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .head {
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav {
+            position: relative;
+            margin-top: 10px;
+            height: 54px;
+            width: 70vw;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            column-gap: 20px;
+            flex-flow: row wrap;
+        }
+
+        .end {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: 0px;
+            column-gap: 15px;
+        }
+
+        .button {
+            font-size: 18px;
+        }
+
+        .b5 {
+            border: 2px solid black;
+            padding: 12px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            color: rgb(103, 103, 103);
+        }
+
+        .container {
+            margin-top: 50px;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            width: 70vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column wrap;
+            row-gap: 30px;
+        }
+
+        .content .div1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 45px;
+            column-gap: 15px;
+        }
+
+        .content .div2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .lastbutton {
+            padding: 5px;
+            border-radius: 5px;
+            height: 40px;
+            width: 25vw;
+            background-color: rgb(73, 185, 230);
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .container2 {
+            max-width: 70vw;
+            margin-top: 70px;
+            /* border: 2px solid black; */
+            display: grid;
+            grid-template-columns: 20vw 20vw 20vw;
+            align-content: center;
+            justify-content: center;
+            gap: 30px 50px;
+        }
+
+        .item {
+            /* border: 2px solid red; */
+            width: 20vw;
+            height: 25vh;
+            border-radius: 5px;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            row-gap: 15px;
+            background-color: rgb(241, 241, 241);
+            padding: 10px;
+        }
+
+        .fbig {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .button-foot {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 10vw;
+            height: 30px;
+            background-color: rgb(64, 190, 64);
+            border-radius: 5px;
+            color: white;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 1050px) {
+            .container2 {
+                max-width: 70vw;
+                margin-top: 70px;
+                /* border: 2px solid black; */
+                display: grid;
+                grid-template-columns: 30vw;
+                align-content: center;
+                justify-content: center;
+                gap: 30px 50px;
+            }
+
+            .button-foot {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 20vw;
+                height: 30px;
+                background-color: rgb(64, 190, 64);
+                border-radius: 5px;
+                color: white;
+                font-size: 13px;
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="nav">
+            <img src="Logo.png" alt="" height="50px" width="150px">
+            <div class="button">Products</div>
+            <div class="button">Pricing</div>
+            <div class="button">Resoucres</div>
+            <div class="button">Our company</div>
+            <div class="end">
+                <div class="button b5">BUY NOW</div>
+                <div class="button">English</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <div class="div1">Download UltraEdit for Windows
+                <img src="Logo2.png" alt="">
+            </div>
+            <div class="div2">
+                Download and try UltraEdit before you buy it! This download includes the full Windows version of the
+                text editor.
+            </div>
+            <div class="lastbutton">
+                DOWNLOAD LINUX OR MAC VERSION
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container2">
+            <div class="item">
+                <div class="fbig">English</div>
+                <div>English</div>
+                <div class="button-foot">Download 64-bit</div>
+            </div>
+            <div class="item">
+                <div class="fbig">Japenese</div>
+                <div>Japenese</div>
+                <div class="button-foot">Download 64-bit</div>
+            </div>
+            <div class="item">
+                <div class="fbig">Chinese</div>
+                <div>Chinese</div>
+                <div class="button-foot">Download 64-bit</div>
+            </div>
+            <div class="item">
+                <div class="fbig">Urdu</div>
+                <div>Urdu</div>
+                <div class="button-foot">Download 64-bit</div>
+            </div>
+            <div class="item">
+                <div class="fbig">German</div>
+                <div>German</div>
+                <div class="button-foot">Download 64-bit</div>
+            </div>
+            <div class="item">
+                <div class="fbig">Pashto</div>
+                <div>Pashto</div>
+                <div class="button-foot">Download 64-bit</div>
+            </div>
+            <div class="item">
+                <div class="fbig">Saraiki</div>
+                <div>Saraiki</div>
+                <div class="button-foot">Download 64-bit</div>
+            </div>
+            <div class="item">
+                <div class="fbig">Sindhi</div>
+                <div>Sindhi</div>
+                <div class="button-foot">Download 64-bit</div>
+            </div>
+            <div class="item">
+                <div class="fbig">French</div>
+                <div>French</div>
+                <div class="button-foot">Download 64-bit</div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
