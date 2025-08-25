@@ -161,3 +161,43 @@
 // let str = "Fahad";
 // let count = CountVowels(str);
 // console.log(count);
+
+
+
+// Question 7
+
+// In html file...
+
+
+
+
+// Question 8
+
+// async function GetPromises(numbers) {
+//     let promises = [];
+//     for (let index = 0; index < numbers.length; index++) {
+//         let prom = new Promise((resolve, reject) => {
+//             setTimeout(() => {
+//                 resolve(numbers[index] * 2);
+//             }, 500);
+//         })
+//         promises.push(prom);
+//     }
+//     return promises;
+// }
+
+// async function main() {
+//     let Arr = [1, 2, 3, 4, 5];
+//     let promises = await GetPromises(Arr);
+//     let result = Promise.all(promises);
+//     result.then((result) => {
+//         console.log(result);
+//     })
+// }
+// main();
+
+
+
+
+// Question 9
+
