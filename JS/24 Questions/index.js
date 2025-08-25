@@ -201,3 +201,22 @@
 
 // Question 9
 
+// In html File..
+
+
+
+
+// Question 10
+
+// async function brewCoffee(type) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve(type + " coffee is ready");
+//         }, 1000);
+//     })
+// }
+// let type = "Frapchino";
+// let pro = brewCoffee(type);
+// pro.then((a) => {
+//     console.log(a);
+// })
